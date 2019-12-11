@@ -1,0 +1,13 @@
+Redux is a predictable state management library for JS applications.
+
+Dan created Redux to be able to go back in time to see when and where the state has changed in his application.
+
+Redux is a small, light-weight state container for use when building JS apps.
+
+The core:
+
+-The Store: Everything that changes within your application is represented by a single JS object known as the store. The store contains our state for our app.
+
+-App state is immutable: When the app state changes, we clone the state object, modify the clone, and replace the original state with the new copy. We never mutate the original object, and we never write to our store object.
+
+-Pure functions change our state: Given the same input, a pure function returns the same output every time. All function (reducers) in Redux must be pure functions. Meaning they take in some state and a description of what changes took place and return a copy of our state.
